@@ -1,229 +1,179 @@
 <!DOCTYPE html>
-<html lang="es-ES">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Método Hakari España — Bótox Natural Japonés | Rejuvenece sin agujas</title>
-<meta name="description" content="El ritual facial japonés que reafirma, levanta y desinflama tu rostro en 20 minutos al día. Sin agujas, sin bótox, sin cremas caras. Curso de Juliana Azevedo.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Método Hakari — Rejuvenecimiento Facial Natural Japonés para Profesionales</title>
 <style>
-  :root{
-    --bg:#FAF4F2; --bg2:#F5EAE8; --bg3:#F0E4E3;
-    --ink:#3A2A30; --muted:#7E6A73; --faint:#B19AA4;
-    --gold:#C0902F; --gold2:#C9A24B; --rose:#A85F78;
-    --line:#EBD9DE;
-    --serif:'Cormorant Garamond',Georgia,serif;
-    --sans:'Jost',system-ui,sans-serif;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased}
-  img{max-width:100%;display:block}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-  .narrow{max-width:760px;margin:0 auto;padding:0 24px}
-  section{padding:80px 0}
-  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacing:.5px}
-  h1{font-size:clamp(34px,6vw,62px)}
-  h2{font-size:clamp(28px,4.5vw,44px);margin-bottom:18px}
-  h3{font-size:clamp(20px,3vw,26px)}
-  p{margin-bottom:16px;color:var(--ink)}
-  .gold{color:var(--gold)}
-  .grad{background:linear-gradient(120deg,#C9A24B,#C0902F 45%,#B07C5B);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .center{text-align:center}
-  .eyebrow{font-family:var(--sans);font-weight:500;letter-spacing:4px;text-transform:uppercase;font-size:13px;color:var(--rose);margin-bottom:18px}
-  .lead{font-size:clamp(19px,2.4vw,23px);color:var(--muted)}
-  .divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:14px 0 30px}
-  .divider span{height:1px;width:80px;background:var(--gold2);opacity:.5}
-  .divider i{width:6px;height:6px;border-radius:50%;background:var(--gold2);display:inline-block}
-
-  /* Botão CTA */
-  .cta{display:inline-block;font-family:var(--sans);font-weight:600;letter-spacing:1.5px;text-transform:uppercase;font-size:16px;
-    color:#FAF4F2;background:linear-gradient(120deg,#C0902F,#C9A24B);padding:20px 40px;border-radius:50px;text-decoration:none;
-    box-shadow:0 10px 30px rgba(201,162,75,.28);transition:transform .2s ease,box-shadow .2s ease;border:none;cursor:pointer}
-  .cta:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(201,162,75,.4)}
-  .cta-sub{font-size:14px;color:var(--muted);margin-top:14px;letter-spacing:.5px}
-
-  /* HERO */
-  .hero{background:radial-gradient(ellipse at 50% 0%,#F0E4E3 0%,#FAF4F2 60%);padding-top:50px;text-align:center}
-  .hero .logo{max-width:340px;margin:0 auto 30px}
-  .hero h1{margin-bottom:22px}
-  .bullets{list-style:none;display:inline-flex;flex-direction:column;gap:10px;text-align:left;margin:28px 0 34px}
-  .bullets li{font-size:18px;color:var(--ink)}
-  .bullets li b{color:var(--gold)}
-  .stars{color:var(--gold);letter-spacing:3px;margin-top:18px;font-size:15px}
-  .stars span{display:block;color:var(--muted);letter-spacing:.5px;margin-top:6px}
-  .hero-note{max-width:600px;margin:0 auto 30px;background:rgba(201,162,75,.08);border:1px solid var(--gold2);border-radius:14px;padding:18px 24px;font-size:17px;color:var(--ink);line-height:1.5}
-  .hero-note b{color:var(--gold);font-weight:600}
-  .stats{display:flex;justify-content:center;gap:0;max-width:760px;margin:46px auto 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .stats .st{flex:1;padding:26px 14px;text-align:center}
-  .stats .st+.st{border-left:1px solid var(--line)}
-  .stats .st b{display:block;font-family:var(--serif);font-weight:600;font-size:clamp(34px,5vw,46px);color:var(--gold);line-height:1}
-  .stats .st span{display:block;margin-top:8px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
-
-  /* alternating bg */
-  .alt{background:var(--bg2)}
-  .alt2{background:linear-gradient(180deg,#F5EAE8,#FAF4F2)}
-
-  /* grids */
-  .grid{display:grid;gap:24px}
-  .g3{grid-template-columns:repeat(3,1fr)}
-  .g2{grid-template-columns:repeat(2,1fr)}
-  .card{background:var(--bg3);border:1px solid var(--line);border-radius:16px;padding:30px}
-  .card h3{color:var(--gold);margin-bottom:10px}
-  .card p{color:var(--muted);margin:0;font-size:16px}
-  .num{font-family:var(--serif);font-size:40px;color:var(--gold2);line-height:1;margin-bottom:12px;display:block}
-
-  /* before-after */
-  .ba{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-  .ba figure{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--bg3)}
-  .ba img{width:100%;height:280px;object-fit:cover}
-  .ph{display:flex;align-items:center;justify-content:center;height:280px;color:var(--faint);font-size:14px;text-align:center;padding:20px;background:repeating-linear-gradient(45deg,#26222b,#26222b 12px,#F0E4E3 12px,#F0E4E3 24px)}
-
-  /* problem list */
-  .prob{list-style:none;max-width:680px;margin:0 auto}
-  .prob li{position:relative;padding:14px 0 14px 38px;border-bottom:1px solid var(--line);color:var(--muted);font-size:18px}
-  .prob li:before{content:"✕";position:absolute;left:0;top:14px;color:var(--rose);font-weight:600}
-
-  /* checklist */
-  .check{list-style:none;max-width:640px;margin:0 auto}
-  .check li{position:relative;padding:13px 0 13px 40px;font-size:18px;color:var(--ink)}
-  .check li:before{content:"✓";position:absolute;left:0;top:11px;color:var(--gold);font-weight:700;font-size:20px}
-
-  /* bonos */
-  .bono{display:flex;gap:20px;align-items:flex-start;background:var(--bg3);border:1px solid var(--line);border-left:3px solid var(--gold2);border-radius:12px;padding:24px;margin-bottom:18px}
-  .bono .ic{font-size:28px;flex-shrink:0}
-  .bono h3{color:var(--ink);font-size:22px;margin-bottom:6px}
-  .bono p{color:var(--muted);margin:0;font-size:16px}
-  .bono .val{color:var(--gold);font-weight:600;white-space:nowrap;font-family:var(--sans)}
-  .bono .val s{color:var(--faint);font-weight:300}
-  .urgent{border-left-color:var(--rose)}
-
-  /* expert */
-  .expert{display:grid;grid-template-columns:280px 1fr;gap:40px;align-items:center}
-  .expert .photo{border-radius:16px;overflow:hidden;border:1px solid var(--line);height:340px}
-
-  /* testimonios */
-  .quote{background:var(--bg3);border:1px solid var(--line);border-radius:16px;padding:28px}
-  .quote .q{font-family:var(--serif);font-size:21px;font-style:italic;color:var(--ink);margin-bottom:14px;line-height:1.4}
-  .quote .who{color:var(--gold);font-weight:500;letter-spacing:.5px;font-size:15px}
-  .quote .s{color:var(--gold);letter-spacing:2px;font-size:13px;margin-bottom:12px}
-
-  /* oferta */
-  .offer{background:linear-gradient(180deg,#F0E4E3,#F5EAE8);border:1px solid var(--gold2);border-radius:22px;padding:44px;max-width:620px;margin:0 auto;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.4)}
-  .stack{list-style:none;text-align:left;margin:22px 0;border-top:1px solid var(--line)}
-  .stack li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:16px}
-  .stack li b{color:var(--ink);font-weight:400}
-  .stack .tot{color:var(--gold);font-weight:600}
-  .price .old{color:var(--faint);text-decoration:line-through;font-size:22px}
-  .price .now{font-family:var(--serif);font-size:72px;color:var(--gold);font-weight:700;line-height:1}
-  .price .cur{font-size:30px;vertical-align:super}
-  .price .note{color:var(--muted);font-size:15px;margin-top:4px}
-  .trust{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:22px;color:var(--muted);font-size:14px}
-
-  /* garantia */
-  .guarantee{display:flex;gap:30px;align-items:center;max-width:760px;margin:0 auto;background:var(--bg3);border:1px solid var(--line);border-radius:16px;padding:34px}
-  .seal{flex-shrink:0;width:120px;height:120px;border-radius:50%;border:2px solid var(--gold2);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--gold);font-family:var(--serif)}
-  .seal b{font-size:40px;line-height:1}
-  .seal span{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-family:var(--sans)}
-
-  /* faq */
-  details{border-bottom:1px solid var(--line);padding:6px 0}
-  summary{cursor:pointer;padding:18px 0;font-size:18px;color:var(--ink);font-weight:400;list-style:none;display:flex;justify-content:space-between;align-items:center}
-  summary::-webkit-details-marker{display:none}
-  summary:after{content:"+";color:var(--gold);font-size:26px;font-weight:300}
-  details[open] summary:after{content:"−"}
-  details p{color:var(--muted);padding:0 0 18px;font-size:16px}
-
-  /* final */
-  .final{background:radial-gradient(ellipse at 50% 100%,#F0E4E3,#FAF4F2 70%);text-align:center}
-  .kanji{font-family:var(--serif);color:var(--faint);font-size:22px;margin-top:30px}
-  footer{padding:40px 0;text-align:center;color:var(--faint);font-size:13px;border-top:1px solid var(--line)}
-
-  @media(max-width:860px){
-    .g3,.g2,.expert{grid-template-columns:1fr}
-    .ba{grid-template-columns:1fr}
-    .expert .photo{height:auto;max-width:280px;margin:0 auto}
-    .guarantee{flex-direction:column;text-align:center}
-    section{padding:60px 0}
-  }
-
-  /* Técnicas */
-  .hk-tec{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}
-  .hk-tec figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--bg3)}
-  .hk-tec img{width:100%;height:210px;object-fit:cover;display:block}
-  .hk-tec figcaption{padding:12px 8px;text-align:center;font-size:12px;letter-spacing:1px;color:var(--gold);text-transform:uppercase}
-  @media(max-width:860px){.hk-tec{grid-template-columns:repeat(2,1fr)}}
-  /* Chats */
-  /* Certificado */
-  .hk-cert{max-width:720px;margin:34px auto 0;aspect-ratio:1.414/1;background:linear-gradient(160deg,#FFFFFF,#F6ECEA);border:1px solid var(--gold2);border-radius:10px;position:relative;overflow:hidden}
-  .hk-cert .fr{position:absolute;inset:16px;border:1px solid rgba(201,162,75,.4);border-radius:6px}
-  .hk-cert .ci{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:6%}
-  .hk-cert .kl{width:118px;margin-bottom:8px}
-  .hk-cert .ct{font-family:var(--serif);font-size:clamp(22px,3.4vw,34px);letter-spacing:6px;text-transform:uppercase;color:var(--gold);font-weight:600}
-  .hk-cert .cs{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
-  .hk-cert .cp{font-size:12px;color:var(--muted)}
-  .hk-cert .cn{font-family:var(--serif);font-size:clamp(22px,3.6vw,36px);color:var(--ink);font-weight:600;border-bottom:1px solid var(--line);padding:2px 26px 6px;margin:2px 0}
-  .hk-cert .cd{font-size:12px;color:var(--muted);max-width:74%;line-height:1.5;margin-top:6px}
-  .hk-cert .cf{display:flex;justify-content:space-between;width:80%;margin-top:22px;align-items:flex-end}
-  .hk-cert .cf .l{font-family:var(--serif);font-size:18px;color:var(--gold);border-bottom:1px solid var(--line);padding-bottom:3px;margin-bottom:4px;font-style:italic}
-  .hk-cert .cf small{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--faint)}
-  @media(max-width:600px){.hk-cert .cd{max-width:90%}}
-  /* Notificación */
-  .hk-notif{position:fixed;left:20px;bottom:20px;z-index:9999;display:flex;align-items:center;gap:12px;background:#fff;color:#1c1a1e;border-radius:14px;padding:10px 16px 10px 10px;box-shadow:0 12px 40px rgba(0,0,0,.45);max-width:320px;transform:translateY(160%);opacity:0;transition:transform .5s ease,opacity .5s ease}
-  .hk-notif.show{transform:translateY(0);opacity:1}
-  .hk-notif .ph{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,#C9A24B,#C0902F);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
-  .hk-notif .bd strong{display:block;font-size:13.5px}
-  .hk-notif .bd span{font-size:12px;color:#6b6b6b}
-  .hk-notif .bd .tm{font-size:10.5px;color:#9a9a9a;margin-top:2px}
-  @media(max-width:520px){.hk-notif{left:12px;right:12px;bottom:12px;max-width:none}}
-  /* Antes/Después */
-  .hk-ba{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}
-  @media(max-width:860px){.hk-ba{grid-template-columns:repeat(2,1fr);max-width:520px;margin-left:auto;margin-right:auto}}
-  @media(max-width:480px){.hk-ba{grid-template-columns:1fr;max-width:340px}}
-  .hk-ba-card{background:var(--bg3);border:1px solid var(--line);border-radius:16px;overflow:hidden}
-  .hk-ba-img{position:relative;aspect-ratio:4/3;overflow:hidden}
-  .hk-ba-img img{width:100%;height:100%;object-fit:cover;display:block}
-  .hk-ba-img .lab{position:absolute;top:10px;font-size:10px;letter-spacing:2px;text-transform:uppercase;background:rgba(0,0,0,.5);color:#fff;padding:4px 9px;border-radius:20px}
-  .hk-ba-img .lab.l{left:10px}
-  .hk-ba-img .lab.r{right:10px}
-  .hk-ba-pair{display:grid;grid-template-columns:1fr 1fr}
-  .hk-ba-ph{position:relative;aspect-ratio:3/4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:repeating-linear-gradient(45deg,#26222b,#26222b 12px,#F0E4E3 12px,#F0E4E3 24px)}
-  .hk-ba-ph.after{background:repeating-linear-gradient(45deg,#2c2620,#2c2620 12px,#332c22 12px,#332c22 24px);border-left:1px solid var(--line)}
-  .hk-ba-ph .lab{position:absolute;top:10px;left:10px;font-size:10px;letter-spacing:2px;text-transform:uppercase;background:rgba(0,0,0,.45);color:var(--gold);padding:4px 9px;border-radius:20px;border:1px solid rgba(201,162,75,.4)}
-  .hk-ba-ph .hint{color:var(--faint);font-size:12px;letter-spacing:1px}
-  .hk-ba-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  .hk-ba-card .cap{padding:12px;text-align:center;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
-  /* Vídeos */
-  .hk-vid{max-width:420px;margin:34px auto 0;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 16px 50px rgba(0,0,0,.45)}
-  .hk-vid video{width:100%;display:block;background:#000}
-  .hk-loop{max-width:300px;margin:0 auto 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line)}
-  .hk-loop video{width:100%;display:block}
-  /* Puntos anatómicos */
-  .hk-anat-kw{letter-spacing:3px;text-transform:uppercase;font-size:12.5px;color:var(--gold);opacity:.85;margin:-6px 0 34px}
-  .hk-anat{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-  .hk-anat-fig{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:4/5;border:1px solid var(--line)}
-  .hk-anat-fig img{width:100%;height:100%;object-fit:cover}
-  .anno{position:absolute;display:flex;align-items:center;gap:8px;transform:translateY(-50%);pointer-events:none}
-  .anno.rev{flex-direction:row-reverse}
-  .anno .dot{width:10px;height:10px;border-radius:50%;background:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.22);flex-shrink:0}
-  .anno .ln{height:1px;width:58px;background:rgba(255,255,255,.75)}
-  .anno .txt{font-size:12px;letter-spacing:1.2px;color:#fff;white-space:nowrap;text-shadow:0 1px 5px rgba(0,0,0,.9)}
-  .anno .arc{width:26px;height:26px;flex-shrink:0}
-  .anno .arc path,.anno .arc polyline{fill:none;stroke:#fff;stroke-width:1.6;stroke-linecap:round}
-  .hk-anat-cap{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--muted);margin-top:30px}
-  @media(max-width:760px){.hk-anat{grid-template-columns:1fr;max-width:420px;margin:0 auto}}
-  /* Slideshow antes/después (topo, crossfade) */
-  .hk-slides{position:relative;max-width:360px;margin:4px auto 28px;aspect-ratio:4/5;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 14px 40px rgba(0,0,0,.4);background:#F0E4E3}
-  .hk-slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .45s ease}
-  .hk-slides img.on{opacity:1}
-
-  .dep-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:900px;margin:0 auto;text-align:left}
-  .dep-grid img{width:100%;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.12)}
-  @media(max-width:640px){.dep-grid{grid-template-columns:1fr}}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+:root{--bg1:#fdeef2;--bg2:#f8e0e8;--page:#fff7f9;--ink:#4a1f33;--accent:#b03a5b;
+--accent2:#c97a92;--gold:#c79a5b;--card:#fffafc;--border:#eccdd8;--soft:#fbeef2;
+--cta1:#b03a5b;--cta2:#7c2740;--cta-text:#fff;--serif:'Playfair Display',Georgia,serif;--sans:'Montserrat',Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg2);line-height:1.6;font-weight:400}
+.wrap{max-width:780px;margin:0 auto;background:var(--page);box-shadow:0 0 70px rgba(74,31,51,.14)}
+.announce{background:linear-gradient(90deg,#7c2740,#b03a5b);color:#fff;text-align:center;
+font-family:var(--sans);font-size:12.5px;font-weight:600;letter-spacing:1px;padding:10px 14px}
+.section{padding:46px 36px}
+.hero{background:linear-gradient(165deg,var(--bg1),var(--bg2) 70%,#f3d3dd);padding:44px 36px 52px;text-align:center}
+.brand-label{font-family:var(--sans);font-size:11px;letter-spacing:5px;color:var(--accent);font-weight:700;margin:8px 0 0}
+.brand-name{font-family:var(--sans);font-size:44px;letter-spacing:11px;color:var(--ink);font-weight:700;line-height:1}
+.brand-sub{font-family:var(--sans);font-size:10.5px;letter-spacing:2.5px;color:var(--accent2);margin-top:8px;text-transform:uppercase}
+.author{font-family:var(--serif);font-size:15px;color:var(--accent);font-style:italic;margin:14px 0 2px}
+.author b{font-style:normal;font-weight:600}
+.earn{display:inline-block;background:#fff;border:1.5px solid var(--gold);color:var(--accent);
+font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.5px;border-radius:999px;
+padding:9px 20px;margin:18px 0 6px;box-shadow:0 6px 16px rgba(124,39,64,.12)}
+h1{font-family:var(--serif);font-size:38px;line-height:1.14;color:var(--ink);margin:10px auto 12px;font-weight:700;max-width:640px}
+h1 .hl{color:var(--accent)}
+.subh{font-family:var(--serif);font-size:20px;font-style:italic;color:var(--accent);opacity:.95;max-width:560px;margin:0 auto}
+.lead{font-size:16px;color:var(--ink);opacity:.82;max-width:580px;margin:16px auto 0}
+.lead b{color:var(--accent);font-weight:600}
+.cta{display:block;text-decoration:none;text-align:center;margin:26px auto 8px;max-width:560px;
+background:linear-gradient(180deg,var(--cta1),var(--cta2));color:var(--cta-text);border-radius:999px;
+padding:19px 26px;box-shadow:0 12px 26px rgba(176,58,91,.35);transition:transform .15s,box-shadow .15s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(176,58,91,.45)}
+.cta .big{font-family:var(--sans);font-weight:700;font-size:19px;letter-spacing:.3px;display:block}
+.cta .big:after{content:" →"}
+.cta .small{font-family:var(--sans);font-size:11px;letter-spacing:2.5px;opacity:.9;margin-top:5px;display:block}
+.micro{font-family:var(--sans);font-size:12.5px;color:var(--ink);opacity:.7;margin-top:4px}
+.trust{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--soft)}
+.trust .item{flex:1;min-width:150px;text-align:center;padding:20px 10px;font-family:var(--sans);font-size:13.5px;font-weight:500;color:var(--ink)}
+.trust .ic{font-size:20px;display:block;margin-bottom:5px}
+.stats{display:flex;justify-content:center;text-align:center;flex-wrap:wrap}
+.stats .s{flex:1;min-width:150px;padding:8px 14px;border-right:1px solid var(--border)}
+.stats .s:last-child{border-right:none}
+.stats .n{font-family:var(--serif);font-size:40px;font-weight:700;color:var(--accent);line-height:1}
+.stats .l{font-family:var(--sans);font-size:12.5px;color:var(--ink);opacity:.75;margin-top:6px}
+.eyebrow{text-align:center;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:2.5px;color:var(--accent2);text-transform:uppercase;margin-bottom:8px}
+.eyebrow:before,.eyebrow:after{content:"";display:inline-block;width:22px;height:1px;background:var(--gold);vertical-align:middle;margin:0 10px}
+.h2{text-align:center;font-family:var(--serif);font-size:29px;font-weight:700;color:var(--ink);margin-bottom:26px}
+.h2 .hl{color:var(--accent)}
+.cards{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.card{flex:1;min-width:200px;max-width:330px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px 20px;text-align:center;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(74,31,51,.1)}
+.card .ci{font-size:28px;margin-bottom:10px}
+.card h3{font-family:var(--sans);font-size:13.5px;font-weight:700;letter-spacing:.8px;color:var(--accent);text-transform:uppercase;margin-bottom:8px}
+.card p{font-size:14.5px;opacity:.82}
+.includes{background:var(--soft);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.includes ul{list-style:none;max-width:560px;margin:0 auto}
+.includes li{font-size:16px;padding:12px 0 12px 36px;position:relative;border-bottom:1px dashed var(--border)}
+.includes li:last-child{border-bottom:none}
+.includes li:before{content:"\2713";position:absolute;left:0;top:11px;color:#fff;background:var(--accent);width:22px;height:22px;border-radius:50%;text-align:center;line-height:22px;font-size:13px;font-weight:700}
+.includes li b{color:var(--accent);font-weight:600}
+.vids{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+.vid{flex:1;min-width:280px;max-width:420px}
+.vid .frame{position:relative;width:100%;padding-top:56.25%;border-radius:16px;overflow:hidden;border:1px solid var(--border);background:#000;box-shadow:0 10px 22px rgba(74,31,51,.12)}
+.vid .frame video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover}
+.ba{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+.ba .case{flex:1;min-width:210px;max-width:330px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:10px;text-align:center}
+.ba .case img{width:100%;height:auto;border-radius:12px;display:block}
+.ba .cap{font-family:var(--sans);font-size:12.5px;font-weight:600;color:var(--accent);letter-spacing:.5px;margin-top:10px;text-transform:uppercase}
+.about{display:flex;flex-wrap:wrap;gap:30px;align-items:center;max-width:640px;margin:0 auto}
+.about .photo{flex:0 0 200px;margin:0 auto}
+.about .photo img{width:200px;height:200px;object-fit:cover;border-radius:50%;border:4px solid var(--accent2);display:block;box-shadow:0 10px 24px rgba(74,31,51,.18)}
+.about .bio{flex:1;min-width:240px}
+.about .bio .k{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:2.5px;color:var(--accent2);text-transform:uppercase;margin-bottom:6px}
+.about .bio h3{font-family:var(--serif);font-size:26px;font-weight:700;color:var(--ink);margin-bottom:10px}
+.about .bio p{font-size:14.5px;opacity:.86;margin-bottom:10px}
+.about .bio .sign{font-family:var(--serif);font-style:italic;color:var(--accent);font-size:19px;margin-top:6px}
+.bonus{max-width:620px;margin:0 auto;background:linear-gradient(160deg,var(--soft),var(--card));border:2px solid var(--accent);border-radius:20px;padding:30px 26px;text-align:center;position:relative}
+.bonus .tag{display:inline-block;background:var(--accent);color:#fff;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:2px;border-radius:999px;padding:6px 16px;margin-bottom:12px;text-transform:uppercase}
+.bonus h3{font-family:var(--serif);font-size:24px;font-weight:700;color:var(--ink);margin:6px 0 16px}
+.bonus-grid{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:center;text-align:left}
+.bonus-grid .pic{flex:0 0 250px;text-align:center}
+.bonus-grid .pic img{width:250px;height:auto;filter:drop-shadow(0 16px 26px rgba(74,31,51,.28))}
+.bonus-grid .info{flex:1;min-width:230px}
+.bonus-list{list-style:none;margin:0;padding:0}
+.bonus-list li{font-size:14.5px;padding:9px 0 9px 30px;position:relative;border-bottom:1px dashed var(--border)}
+.bonus-list li:last-child{border-bottom:none}
+.bonus-list li:before{content:"\2713";position:absolute;left:0;top:9px;color:var(--accent);font-weight:700;font-size:16px}
+.bonus-list li b{color:var(--accent);font-weight:600}
+.bonus .seal{position:absolute;top:-32px;right:-12px;width:104px;height:104px;transform:rotate(12deg);filter:drop-shadow(0 6px 12px rgba(74,31,51,.35))}
+.vstack{max-width:520px;margin:0 auto 8px;background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.vstack .vrow{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;border-bottom:1px dashed var(--border);font-size:14.5px}
+.vstack .vrow:last-child{border-bottom:none}
+.vstack .vrow .it{padding-right:12px}.vstack .vrow .it b{color:var(--accent);font-weight:600}
+.vstack .vrow .vl{font-family:var(--sans);white-space:nowrap;color:var(--accent2);text-decoration:line-through;font-size:13px}
+.vstack .vtot{background:var(--soft);font-weight:700}
+.vstack .vtot .vl{color:var(--ink);text-decoration:line-through;opacity:.7}
+.price{text-align:center}
+.price .today{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:3px;color:var(--accent);text-transform:uppercase;margin-top:16px}
+.price .now{font-family:var(--serif);font-size:60px;font-weight:700;color:var(--ink);line-height:1;margin:4px 0}
+.price .cur{font-size:22px;color:var(--accent2)}
+.price .pu{font-family:var(--sans);font-size:13px;letter-spacing:2px;color:var(--ink);opacity:.7;text-transform:uppercase;margin-top:6px}
+.pbadge{display:inline-block;background:var(--accent);color:#fff;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:2px;border-radius:999px;padding:8px 18px;margin-top:14px;text-transform:uppercase}
+.guar{background:var(--soft);border:1px solid var(--border);border-radius:18px;padding:26px;display:flex;gap:22px;align-items:center;max-width:600px;margin:0 auto}
+.guar .gseal{flex:0 0 88px;height:88px;border-radius:50%;border:3px solid var(--accent);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--accent)}
+.guar .gseal .d{font-family:var(--serif);font-size:30px;line-height:1;font-weight:700}
+.guar .gseal .t{font-family:var(--sans);font-size:10px;letter-spacing:2px}
+.guar h3{font-family:var(--serif);font-size:21px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.guar p{font-size:14.5px;opacity:.85}.guar p .em{color:var(--accent);font-weight:600}
+.testi{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.tcard{flex:1;min-width:220px;max-width:340px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px 20px}
+.tcard .stars{color:var(--gold);font-size:16px;letter-spacing:2px}
+.tcard .q{font-family:var(--serif);font-size:15px;font-style:italic;opacity:.92;margin:10px 0 14px}
+.tcard .who{font-family:var(--sans);font-size:13px;color:var(--accent);font-weight:700}
+.tcard .loc{font-family:var(--sans);font-size:12px;opacity:.7}
+.faq{max-width:620px;margin:0 auto}
+.faq details{background:var(--card);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;padding:0 18px;overflow:hidden}
+.faq summary{font-family:var(--sans);font-size:15.5px;font-weight:600;color:var(--ink);cursor:pointer;list-style:none;padding:16px 0;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:2px;top:12px;font-size:24px;color:var(--accent)}
+.faq details[open] summary:after{content:"\2013"}
+.faq p{font-size:14.5px;opacity:.85;padding:0 0 16px}
+.foot{background:var(--bg2);text-align:center;padding:26px 30px 96px;font-family:var(--sans);font-size:12px;color:var(--ink);opacity:.8}
+.foot .row{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-bottom:10px;font-weight:500}
+.divider{width:46px;height:3px;background:var(--gold);margin:16px auto;border-radius:2px}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(124,39,64,.97);backdrop-filter:blur(4px);
+display:flex;align-items:center;justify-content:center;gap:16px;padding:11px 16px;box-shadow:0 -4px 20px rgba(0,0,0,.2)}
+.sticky .sp{color:#fff;font-family:var(--sans);font-size:13px;font-weight:600}.sticky .sp s{opacity:.6;font-weight:400;margin-right:6px}
+.sticky a{background:#fff;color:var(--accent);text-decoration:none;font-family:var(--sans);font-weight:700;font-size:14px;padding:11px 22px;border-radius:999px;white-space:nowrap}
+@media(max-width:520px){.brand-name{font-size:34px;letter-spacing:6px}h1{font-size:28px}.price .now{font-size:46px}
+.bonus .seal{width:78px;height:78px;top:-22px;right:-4px}.sticky .sp s{display:none}.section{padding:36px 22px}.hero{padding:34px 22px 40px}}
 </style>
-<script>
+<style>
+.pain .q{max-width:600px;margin:0 auto}
+.pain .q p{font-family:var(--serif);font-size:17.5px;font-style:italic;line-height:1.65;margin-bottom:16px;padding-left:18px;border-left:3px solid var(--accent2)}
+.pain .punch{text-align:center;font-family:var(--sans);font-weight:700;color:var(--accent);font-size:17px;margin-top:24px;line-height:1.5}
+.explain{max-width:620px;margin:0 auto;text-align:center}
+.explain p{font-size:16px;opacity:.88;margin-bottom:14px}
+.explain p b{color:var(--accent);font-weight:600}
+.explain .big{font-family:var(--serif);font-size:21px;font-style:italic;color:var(--accent);margin-top:18px}
+.cmp{max-width:640px;margin:0 auto;border:1px solid var(--border);border-radius:16px;overflow:hidden;background:var(--card)}
+.cmp .r{display:flex;border-bottom:1px solid var(--border)}
+.cmp .r:last-child{border-bottom:none}
+.cmp .r .c{flex:1;padding:14px 16px;font-size:14px}
+.cmp .r .c:first-child{opacity:.68;border-right:1px solid var(--border)}
+.cmp .r .c:last-child{font-weight:500;background:var(--soft)}
+.cmp .r .c b{color:var(--accent);font-weight:600}
+.cmp .hd .c{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);opacity:1}
+.cmp .hd .c:first-child{opacity:.6;color:var(--ink)}
+.roi{max-width:600px;margin:22px auto 0;text-align:center;background:var(--soft);border:1px dashed var(--accent2);border-radius:14px;padding:20px}
+.roi b{color:var(--accent)}
+@media(max-width:520px){.cmp .r .c{font-size:13px;padding:12px 12px}.pain .q p{font-size:16px}}
+
+.ba.portrait .case img{aspect-ratio:4/5;object-fit:cover;object-position:center 28%}
+@media(max-width:520px){.ba.portrait .case img{aspect-ratio:3/4}}
+
+.ba.five{max-width:1000px;margin:0 auto}
+.ba.five .case{flex:0 0 calc(33.333% - 11px);max-width:calc(33.333% - 11px);min-width:0}
+@media(max-width:640px){.ba.five .case{flex:0 0 calc(50% - 8px);max-width:calc(50% - 8px)}}
+.ba.five .cap{font-size:11.5px;line-height:1.3}
+
+.vtesti{max-width:330px;margin:0 auto 30px}
+.vtesti .vlabel{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--accent);text-align:center;margin-bottom:12px}
+.vtesti .vframe{position:relative;width:100%;padding-top:177.78%;border-radius:18px;overflow:hidden;border:1px solid var(--border);background:#000;box-shadow:0 12px 26px rgba(74,31,51,.16)}
+.vtesti .vframe video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vtesti .vcap{margin-top:16px;font-family:var(--serif);font-size:15.5px;line-height:1.65;text-align:center}
+.vtesti .vcap b{color:var(--accent);font-weight:600}
+
+/* ===== Carrossel antes/despues da hero (mantido da versao anterior) ===== */
+.hk-slides{position:relative;width:100%;max-width:300px;margin:22px auto 4px;aspect-ratio:4/5;border-radius:18px;overflow:hidden;
+border:1px solid var(--border);box-shadow:0 14px 34px rgba(74,31,51,.18);background:var(--bg2)}
+.hk-slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .45s ease}
+.hk-slides img.on{opacity:1}
+.hk-slides .badge{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);z-index:2;
+background:rgba(255,255,255,.92);color:var(--accent);font-family:var(--sans);font-size:10.5px;font-weight:700;
+letter-spacing:1.4px;text-transform:uppercase;padding:6px 14px;border-radius:999px;box-shadow:0 4px 12px rgba(74,31,51,.14)}
+</style><script>
   window.pixelId = "6a28bee1f8a67ee4536fb161";
   var a = document.createElement("script");
   a.setAttribute("async", "");
@@ -237,367 +187,232 @@
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src="https://api.metodohakari.com/7nsmjlwfjoys.js?"+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','4jpnm=Gh1SLTI6QT01Plo9LTQrTAVEXURXUQgEThQKHgkTAwISEg4YD1kPBR4%3D');</script>
 <!-- End Google Tag Manager -->
-
-
-<!-- ============ HERO ============ -->
-<header class="hero">
-  <div class="wrap">
-    <!-- LOGO v1 (fondo oscuro) -->
-    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Método Hakari">
-      <defs>
-        <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#C9A24B"/><stop offset="45%" stop-color="#C0902F"/><stop offset="100%" stop-color="#B07C5B"/></linearGradient>
-        <linearGradient id="enso" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#A85F78"/><stop offset="100%" stop-color="#C9A24B"/></linearGradient>
-      </defs>
-      <g transform="translate(450,150)">
-        <path d="M 62,-8 A 70,70 0 1 0 70,40" fill="none" stroke="url(#enso)" stroke-width="11" stroke-linecap="round" transform="rotate(20)" opacity="0.95"/>
-        <g fill="url(#gold)">
-          <path d="M0,-3 C 9,-9 9,-26 0,-34 C -9,-26 -9,-9 0,-3 Z" transform="rotate(0)"/>
-          <path d="M0,-3 C 9,-9 9,-26 0,-34 C -9,-26 -9,-9 0,-3 Z" transform="rotate(72)"/>
-          <path d="M0,-3 C 9,-9 9,-26 0,-34 C -9,-26 -9,-9 0,-3 Z" transform="rotate(144)"/>
-          <path d="M0,-3 C 9,-9 9,-26 0,-34 C -9,-26 -9,-9 0,-3 Z" transform="rotate(216)"/>
-          <path d="M0,-3 C 9,-9 9,-26 0,-34 C -9,-26 -9,-9 0,-3 Z" transform="rotate(288)"/>
-          <circle r="4.5" fill="#F3E3B8"/>
-        </g>
-      </g>
-      <text x="450" y="300" text-anchor="middle" font-family="Jost,Arial,sans-serif" font-size="34" letter-spacing="18" font-weight="300" fill="#3A2A30">MÉTODO</text>
-      <text x="450" y="392" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif" font-size="118" letter-spacing="6" font-weight="700" fill="url(#gold)">HAKARI</text>
-      <line x1="250" y1="438" x2="370" y2="438" stroke="#C9A24B" stroke-width="1" opacity="0.6"/>
-      <line x1="530" y1="438" x2="650" y2="438" stroke="#C9A24B" stroke-width="1" opacity="0.6"/>
-      <circle cx="450" cy="438" r="3" fill="#C9A24B"/>
-      <text x="450" y="444" text-anchor="middle" font-family="Jost,Arial,sans-serif" font-size="17" letter-spacing="4" font-weight="400" fill="#CFC6B4">MÉTODO JAPONÉS DE BÓTOX NATURAL</text>
-    </svg>
-
+<div class="wrap">
+  <div class="announce">✦ OFERTA LIMITADA — Acceso de por vida + bonos exclusivos GRATIS</div>
+  <header class="hero">
+    <svg viewBox="0 0 240 240" width="74" height="74" xmlns="http://www.w3.org/2000/svg">
+<circle cx="120" cy="120" r="104" fill="none" stroke="var(--accent2)" stroke-width="3"/>
+<circle cx="120" cy="120" r="94" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-dasharray="2 6"/>
+<g fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M120 84 C111 104 111 126 120 154 C129 126 129 104 120 84 Z"/>
+<path d="M120 154 C103 144 90 127 88 104 C104 111 116 128 120 154 Z"/>
+<path d="M120 154 C137 144 150 127 152 104 C136 111 124 128 120 154 Z"/>
+<path d="M120 154 C100 152 82 142 70 124 C90 124 110 136 120 154 Z" stroke-width="3.4"/>
+<path d="M120 154 C140 152 158 142 170 124 C150 124 130 136 120 154 Z" stroke-width="3.4"/></g>
+<path d="M84 158 C100 170 140 170 156 158" fill="none" stroke="var(--accent2)" stroke-width="3" stroke-linecap="round"/>
+<circle cx="120" cy="72" r="3.6" fill="var(--accent2)"/></svg>
+    <div class="brand-name">HAKARI</div>
+    <div class="brand-sub">Método Japonés de Rejuvenecimiento Facial Natural</div>
+    <div class="author"><b>Juliana Azevedo</b> · Especializada en Japón</div>
+    <h1>Conquista y fideliza a tu clienta con la <span class="hl">técnica japonesa de rejuvenecimiento facial</span> y aumenta tu beneficio hasta un 100%</h1>
+    <div class="subh">El protocolo natural que levanta, define y desinflama el rostro usando solo las manos — sin agujas, sin bótox y sin aparatología.</div>
+    <p class="lead">Para <b>esteticistas, cosmetólogas, facialistas</b> y profesionales de la belleza y la salud. Una técnica que <b>transforma el resultado de tu clienta y hace que vuelva</b>.</p>
     <div class="hk-slides" id="hkSlides">
-      <img src="https://esp.metodohakari.com/img/full-1.webp" class="on" alt="Antes y después — Método Hakari">
-      <img src="https://esp.metodohakari.com/img/full-2.webp" alt="">
-      <img src="https://esp.metodohakari.com/img/full-3.webp" alt="">
-      <img src="https://esp.metodohakari.com/img/full-4.webp" alt="">
-      <img src="https://esp.metodohakari.com/img/full-5.webp" alt="">
+      <img src="https://esp.metodohakari.com/img/full-1.webp" class="on" alt="Antes y despues - Metodo Hakari">
+      <img loading="lazy" src="https://esp.metodohakari.com/img/full-2.webp" alt="">
+      <img loading="lazy" src="https://esp.metodohakari.com/img/full-3.webp" alt="">
+      <img loading="lazy" src="https://esp.metodohakari.com/img/full-4.webp" alt="">
+      <img loading="lazy" src="https://esp.metodohakari.com/img/full-5.webp" alt="">
+      <span class="badge">Resultados reales</span>
     </div>
     <script>(function(){var im=document.querySelectorAll('#hkSlides img');var i=0;if(im.length<2)return;setInterval(function(){im[i].classList.remove('on');i=(i+1)%im.length;im[i].classList.add('on');},1500);})();</script>
+    <a class="cta" id="cta-hero" data-checkout href="https://pay.hotmart.com/M106209244D?off=jlhrnwtg&amp;checkoutMode=10"><span class="big">Quiero acceder al Método</span><span class="small">PAGO ÚNICO · ACCESO INMEDIATO</span></a>
+    <div class="micro">Pago único de 27€ · Acceso inmediato · Garantía de 7 días</div>
+  </header>
 
-    <h1>Mejora tus servicios con el <span class="grad">Método Hakari</span>, incrementa tus ingresos y podrás cobrar hasta 197€ por sesión</h1>
-    <p class="lead" style="max-width:680px;margin:22px auto 0"><em>Un método japonés natural de rejuvenecimiento facial para profesionales de la belleza.</em></p>
-    <p style="max-width:660px;margin:18px auto 0;font-size:18px;color:var(--muted)">Ideal para <b class="gold">esteticistas, facialistas, cosmetólogos</b> y especialistas en rejuvenecimiento facial. Añade a tu oferta una técnica natural que <b class="gold">transforma los resultados y fideliza a tus clientes</b>.</p>
+  <section class="trust">
+    <div class="item"><span class="ic">🌿</span>Método 100% natural</div>
+    <div class="item"><span class="ic">🎓</span>Aprende a tu ritmo</div>
+    <div class="item"><span class="ic">∞</span>Acceso de por vida</div>
+    <div class="item"><span class="ic">🔒</span>Pago seguro</div>
+  </section>
 
-    <ul class="bullets">
-      <li>✅ <b>100% natural</b> — sin agujas, sin bisturí, sin riesgos</li>
-      <li>✅ Solo <b>20 minutos al día</b>, en casa, a tu ritmo</li>
-      <li>✅ Técnicas aprendidas directamente <b>en Japón</b></li>
-      <li>✅ Resultados visibles desde las <b>primeras 2 semanas</b></li>
-    </ul>
+  <section class="section stats">
+    <div class="s"><div class="n">+3.500</div><div class="l">profesionales formadas</div></div>
+    <div class="s"><div class="n">40+</div><div class="l">países</div></div>
+    <div class="s"><div class="n">11</div><div class="l">técnicas de protocolo</div></div>
+  </section>
 
-    <p class="hero-note">💰 Y no es solo autocuidado: <b>profesionales ya cobran 150 € por sesión</b> de yoga facial en sus clínicas o a domicilio.</p>
-
-    <div><a href="#oferta" class="cta">Quiero rejuvenecer mi rostro →</a></div>
-    <p class="stars">★★★★★<span>Más de 5.000 mujeres en España ya transformaron su rostro de forma natural</span></p>
-
-    <div class="stats">
-      <div class="st"><b>+3.500</b><span>Alumnas formadas</span></div>
-      <div class="st"><b>40+</b><span>Países del mundo</span></div>
-      <div class="st"><b>11</b><span>Técnicas de protocolo</span></div>
+  <section class="section pain">
+    <div class="eyebrow">Quizá ya lo hayas sentido</div><div class="h2">Dominas la técnica.<br>Pero el servicio <span class="hl">depende de la aparatología</span>.</div>
+    <div class="q">
+      <p>Ya dominas la limpieza facial, el peeling, el masaje. Pero todo depende de aparatos caros, de producto que se acaba y de clientas que desaparecen después del pack.</p>
+      <p>Ese es el diferencial de este método: no depende de nada de eso. El mejor equipo que vas a usar son tus manos y tu conocimiento. Por eso el beneficio es 100% tuyo.</p>
+      <p>Un tratamiento de valor, que fideliza y suma.</p>
     </div>
-  </div>
-</header>
+    <div class="punch">Quien tiene una respuesta para esto no compite por precio.<br>Crea lista de espera.</div>
+  </section>
 
-<!-- ============ VIDEO EN ACCIÓN ============ -->
-<section class="alt2">
-  <div class="wrap center">
-    <p class="eyebrow">El ritual en acción</p>
-    <h2>Así se ve el Método Hakari</h2>
-    <div class="divider"><span></span><i></i><span></span></div>
-    <p class="lead" style="max-width:600px;margin:0 auto 6px">Yoga facial y masaje japonés, paso a paso, para reafirmar tu rostro de forma 100% natural.</p>
-    <div class="hk-vid"><video controls playsinline preload="metadata" poster="https://esp.metodohakari.com/videos/hakari-massage-poster.jpg"><source src="https://esp.metodohakari.com/videos/hakari-massage.mp4" type="video/mp4"></video></div>
-  </div>
-</section>
-
-<!-- ============ ANTES / DESPUÉS ============ -->
-<section class="alt">
-  <div class="wrap center">
-    <p class="eyebrow">Resultados reales</p>
-    <h2>La transformación de quienes ya practican el Método Hakari</h2>
-    <div class="divider"><span></span><i></i><span></span></div>
-    <p class="lead" style="max-width:640px;margin:0 auto 40px">Resultados naturales, seguros y comprobados — sin un solo procedimiento invasivo.</p>
-    <div class="hk-ba">
-      <div class="hk-ba-card"><div class="hk-ba-img"><img src="https://esp.metodohakari.com/img/real-ba-1.webp" loading="lazy" alt="Antes y después Método Hakari"></div><div class="cap">Resultado en 4 semanas</div></div>
-      <div class="hk-ba-card"><div class="hk-ba-img"><img src="https://esp.metodohakari.com/img/real-ba-2.webp" loading="lazy" alt="Antes y después Método Hakari"></div><div class="cap">Más firmeza y menos papada</div></div>
-      <div class="hk-ba-card"><div class="hk-ba-img"><img src="https://esp.metodohakari.com/img/real-ba-3.webp" loading="lazy" alt="Antes y después Método Hakari"></div><div class="cap">Óvalo más definido</div></div>
-      <div class="hk-ba-card"><div class="hk-ba-img"><img src="https://esp.metodohakari.com/img/real-ba-4.webp" loading="lazy" alt="Antes y después Método Hakari"></div><div class="cap">Piel más firme y luminosa</div></div>
+  <section class="section includes">
+    <div class="eyebrow">El producto principal</div><div class="h2">¿Qué es el <span class="hl">Método Hakari</span>?</div>
+    <div class="explain">
+      <p>El rostro tiene <b>más de 50 músculos</b>. Ninguno se entrena. Todos sostienen la piel.</p>
+      <p>Con el tiempo, unos se atrofian y otros quedan en tensión crónica. El resultado es lo que tu clienta ve en el espejo: flacidez, surco marcado, papada, mirada caída, rostro hinchado y asimétrico.</p>
+      <p>El <b>Método Hakari</b> es reeducación muscular aplicada al rostro: activa lo que está débil, libera lo que está bloqueado y devuelve tono, drenaje y simetría — sin invasión, sin contraindicaciones y sin depender de aparatología.</p>
+      <div class="big">Es el único servicio de la estética que la clienta siente funcionar durante la sesión.</div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ PROBLEMA ============ -->
-<section>
-  <div class="narrow center">
-    <p class="eyebrow">¿Te reconoces en esto?</p>
-    <h2>Tu rostro no necesita ser corregido. Necesita ser <span class="gold">reactivado.</span></h2>
-    <div class="divider"><span></span><i></i><span></span></div>
-    <ul class="prob">
-      <li>Te miras al espejo y ves un rostro más caído, cansado e hinchado que hace unos años.</li>
-      <li>Gastas fortunas en cremas que prometen todo y no cambian nada.</li>
-      <li>Te da miedo (y pereza) recurrir a agujas o bisturí… pero sientes que es tu única opción.</li>
-      <li>Ves la papada y las líneas de expresión avanzar — y sientes que pierdes tu propia expresión.</li>
-    </ul>
-    <p style="margin-top:30px" class="lead">Para esto, las mujeres japonesas guardan un secreto que la industria de la estética prefiere que <b class="gold">no conozcas.</b></p>
-  </div>
-</section>
-
-<!-- ============ SECRETO JAPONÉS ============ -->
-<section class="alt2">
-  <div class="narrow center">
-    <p class="eyebrow">El secreto japonés</p>
-    <h2>Por qué las japonesas envejecen distinto</h2>
-    <div class="divider"><span></span><i></i><span></span></div>
-    <p>En Japón, la belleza no se compra en una jeringa: se cultiva con las manos. Durante siglos, el <b class="gold">yoga facial</b> y el masaje (inspirados en tradiciones como el Kobido) han mantenido rostros firmes y luminosos sin un solo procedimiento invasivo.</p>
-    <p>Juliana Azevedo viajó a Japón para aprender estas técnicas en su origen — y las transformó en un método simple, paso a paso, que cualquier mujer puede aplicar en casa: el <b class="gold">Método Hakari</b>.</p>
-  </div>
-  <div class="wrap" style="margin-top:50px">
-    <div class="grid g3">
-      <div class="card center"><span class="num">01</span><h3>Activación muscular</h3><p>El yoga facial tonifica y levanta los músculos que sostienen tu rostro.</p></div>
-      <div class="card center"><span class="num">02</span><h3>Drenaje &amp; desinflamación</h3><p>El masaje reposiciona, drena y reduce la hinchazón acumulada.</p></div>
-      <div class="card center"><span class="num">03</span><h3>Reprogramación</h3><p>Los protocolos diarios reentrenan tu piel para mantenerse firme.</p></div>
+  <section class="section">
+    <div class="eyebrow">Una técnica que transforma resultados</div><div class="h2">¿Por qué formarte en el <span class="hl">Método Hakari</span>?</div>
+    <div class="cards">
+      <div class="card"><div class="ci">🌿</div><h3>Servicio con coste cero</h3><p>Solo tus manos. Sin aparatos, sin desechables, sin producto que se acaba — margen del 100%.</p></div>
+      <div class="card"><div class="ci">💶</div><h3>Cobra más por sesión</h3><p>Un servicio premium natural que eleva el ticket medio de tu cabina desde la primera semana.</p></div>
+      <div class="card"><div class="ci">⛩️</div><h3>Método japonés</h3><p>Técnicas ancestrales comprobadas, seguras y 100% naturales, organizadas en un protocolo profesional.</p></div>
+      <div class="card"><div class="ci">🔁</div><h3>Recurrencia natural</h3><p>El músculo necesita continuidad. El protocolo nace como pack — la clienta vuelve cada semana.</p></div>
+      <div class="card"><div class="ci">💗</div><h3>Fideliza a tus clientas</h3><p>Resultado visible desde la primera sesión. Lo siente, lo comenta, lo fotografía y te recomienda.</p></div>
+      <div class="card"><div class="ci">📈</div><h3>Posicionamiento</h3><p>Dejas de ser una cabina más y te conviertes en referencia en rejuvenecimiento facial natural en tu ciudad.</p></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ QUÉ ES + CÓMO FUNCIONA ============ -->
-<section>
-  <div class="narrow center">
-    <p class="eyebrow">El método completo</p>
-    <h2>Un método, no una clase suelta</h2>
-    <div class="divider"><span></span><i></i><span></span></div>
-    <p class="lead" style="margin-bottom:36px">Juliana te enseña exactamente qué hacer, en qué orden y por cuánto tiempo — para que veas resultados sin adivinar nada.</p>
-  </div>
-  <div class="wrap">
-    <ul class="check" style="max-width:560px">
-      <li>🎥 Más de <b>30 vídeo clases</b>, cortas y fáciles de seguir</li>
-      <li>📅 <b>Cronograma semanal</b> de aplicación — sabes qué hacer cada día</li>
-      <li>📘 <b>E-book visual</b> con los mapas de los puntos faciales</li>
-      <li>♾️ <b>Acceso de por vida</b> + todas las actualizaciones</li>
-      <li>👩‍👩‍👧 <b>Comunidad privada</b> de apoyo</li>
-      <li>🏆 <b>Certificado</b> de finalización</li>
-    </ul>
-  </div>
-  <div class="narrow center" style="margin-top:50px">
-    <h3 class="gold">Tan simple que lo haces mientras ves tu serie favorita</h3>
-    <div class="grid g3" style="margin-top:30px;text-align:left">
-      <div class="card"><span class="num">1</span><p><b style="color:var(--ink)">Accede</b> desde tu móvil u ordenador — donde quieras.</p></div>
-      <div class="card"><span class="num">2</span><p><b style="color:var(--ink)">Sigue</b> el ritual guiado de 20 minutos al día.</p></div>
-      <div class="card"><span class="num">3</span><p><b style="color:var(--ink)">Observa</b> cómo tu rostro se levanta semana a semana.</p></div>
+  <section class="section">
+    <div class="eyebrow">Ve el método en acción</div><div class="h2">Clases <span class="hl">demostrativas</span></div>
+    <div class="vids">
+      <div class="vid"><div class="frame"><video controls playsinline preload="metadata" poster="img/poster-demo-1.webp"><source src="videos/hakari-demo-1.mp4" type="video/mp4"></video></div></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="metadata" poster="img/poster-demo-2.webp"><source src="videos/hakari-demo-2.mp4" type="video/mp4"></video></div></div>
     </div>
-    <div style="margin-top:40px"><a href="#oferta" class="cta">Empezar mi transformación →</a></div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ TÉCNICAS ============ -->
-<section>
-  <div class="wrap center">
-    <p class="eyebrow">El método por dentro</p>
-    <h2>Las técnicas que vas a dominar</h2>
-    <div class="divider"><span></span><i></i><span></span></div>
-    <p class="lead" style="max-width:620px;margin:0 auto">Maniobras guiadas paso a paso, una por una, para que sepas exactamente qué hacer.</p>
-    <div class="hk-loop"><video autoplay muted loop playsinline preload="metadata"><source src="https://esp.metodohakari.com/videos/hakari-loop.mp4" type="video/mp4"></video></div>
-    <div class="hk-tec">
-      <figure><img src="https://esp.metodohakari.com/img/tecnica-1.webp" alt="Lifting lateral" loading="lazy"><figcaption>Lifting lateral</figcaption></figure>
-      <figure><img src="https://esp.metodohakari.com/img/tecnica-2.webp" alt="Contorno de ojos" loading="lazy"><figcaption>Contorno de ojos</figcaption></figure>
-      <figure><img src="https://esp.metodohakari.com/img/tecnica-3.webp" alt="Pómulos esculpidos" loading="lazy"><figcaption>Pómulos esculpidos</figcaption></figure>
-      <figure><img src="https://esp.metodohakari.com/img/tecnica-4.webp" alt="Frente lisa" loading="lazy"><figcaption>Frente lisa</figcaption></figure>
-      <figure><img src="https://esp.metodohakari.com/img/tecnica-5.webp" alt="Mandíbula definida" loading="lazy"><figcaption>Mandíbula definida</figcaption></figure>
+  <section class="section">
+    <div class="eyebrow">Transformaciones reales</div><div class="h2">Antes &amp; <span class="hl">Después</span></div>
+    <div class="ba">
+      <div class="case"><img loading="lazy" decoding="async" src="img/ba-1.webp" alt="Antes y después"><div class="cap">Resultado en 4 semanas</div></div>
+      <div class="case"><img loading="lazy" decoding="async" src="img/ba-2.webp" alt="Antes y después"><div class="cap">Óvalo más definido</div></div>
+      <div class="case"><img loading="lazy" decoding="async" src="img/ba-3.webp" alt="Antes y después"><div class="cap">Piel firme y luminosa</div></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ PUNTOS ANATÓMICOS ============ -->
-<section>
-  <div class="wrap center">
-    <p class="eyebrow">El protocolo</p>
-    <h2>Cada punto tiene un objetivo anatómico preciso.</h2>
-    <p class="hk-anat-kw">Acupresión · Lifting · Kobido · Drenaje linfático · 11 técnicas · Un protocolo completo</p>
-    <div class="hk-anat">
-      <figure class="hk-anat-fig">
-        <img src="https://esp.metodohakari.com/img/anat-frente.webp" style="object-position:center 22%" loading="lazy" alt="Acupresión en la frente">
-        <div class="anno" style="left:54%;top:31%"><span class="dot"></span><span class="ln"></span><span class="txt">Frente · Lifting</span></div>
-      </figure>
-      <figure class="hk-anat-fig">
-        <img src="https://esp.metodohakari.com/img/anat-sienes.webp" style="object-position:center 24%" loading="lazy" alt="Movimiento circular en la sien">
-        <div class="anno rev" style="left:63%;top:39%"><svg class="arc" viewBox="0 0 24 24"><path d="M19 12a7 7 0 1 1-2.5-5.4"/><polyline points="17,3 17,7 13,7"/></svg><span class="ln"></span><span class="txt">Sien · Movimiento circular</span></div>
-      </figure>
+  <section class="section">
+    <div class="eyebrow">Lo que vas a dominar</div><div class="h2">Técnicas que <span class="hl">aprenderás</span></div>
+    <div class="ba five">
+      <div class="case"><img loading="lazy" decoding="async" src="img/tec-1.webp" alt="Método Hakari"><div class="cap">Masaje lifting</div></div>
+      <div class="case"><img loading="lazy" decoding="async" src="img/tec-2.webp" alt="Método Hakari"><div class="cap">Masaje del contorno de ojos</div></div>
+      <div class="case"><img loading="lazy" decoding="async" src="img/tec-3.webp" alt="Método Hakari"><div class="cap">Masaje de los surcos nasogenianos</div></div>
+      <div class="case"><img loading="lazy" decoding="async" src="img/tec-4.webp" alt="Método Hakari"><div class="cap">Masaje del entrecejo</div></div>
+      <div class="case"><img loading="lazy" decoding="async" src="img/tec-5.webp" alt="Método Hakari"><div class="cap">Masaje de la papada</div></div>
     </div>
-    <p class="hk-anat-cap">En este orden preciso — para un resultado visible desde la primera sesión.</p>
-  </div>
-</section>
+  </section>
 
-<!-- ============ BONOS / BÓTOX NATURAL ============ -->
-<section class="alt">
-  <div class="narrow center">
-    <p class="eyebrow">Bonos exclusivos</p>
-    <h2>Además, llévate GRATIS los 3 Protocolos de <span class="gold">Bótox Natural</span></h2>
-    <div class="divider"><span></span><i></i><span></span></div>
-    <p class="lead" style="margin-bottom:40px">El corazón del bótox natural japonés. Hoy van incluidos sin costo — pero solo en esta página.</p>
-  </div>
-  <div class="narrow">
-    <div class="bono"><div class="ic">🎁</div><div style="flex:1"><h3>Protocolo 1 — Lifting Express (Ojos y Frente)</h3><p>Borra el cansancio y suaviza las líneas de expresión.</p></div><div class="val"><s>37 €</s> GRATIS</div></div>
-    <div class="bono"><div class="ic">🎁</div><div style="flex:1"><h3>Protocolo 2 — Contorno y Papada</h3><p>Redefine la mandíbula y reduce la papada visiblemente.</p></div><div class="val"><s>37 €</s> GRATIS</div></div>
-    <div class="bono"><div class="ic">🎁</div><div style="flex:1"><h3>Protocolo 3 — Glow Japonés (Luminosidad)</h3><p>Piel desinflamada, fresca y luminosa al despertar.</p></div><div class="val"><s>27 €</s> GRATIS</div></div>
-    <div class="bono urgent"><div class="ic">⏰</div><div style="flex:1"><h3>Bono Cuello &amp; Escote Premium</h3><p><b style="color:var(--rose)">Solo para quienes compran en los próximos minutos.</b></p></div><div class="val"><s>47 €</s> GRATIS</div></div>
-  </div>
-</section>
+  <section class="section includes">
+    <div class="eyebrow">Base científica</div><div class="h2">Aprende la <span class="hl">anatomía facial</span></div>
+    <p style="text-align:center;max-width:560px;margin:0 auto 22px;opacity:.85">Domina los músculos del rostro para aplicar cada maniobra con precisión profesional — y para explicarle a tu clienta exactamente qué está ocurriendo.</p>
+    <div class="ba portrait">
+      <div class="case"><img loading="lazy" decoding="async" src="img/anat-1.webp" alt="Anatomía facial"></div>
+      <div class="case"><img loading="lazy" decoding="async" src="img/anat-2.webp" alt="Anatomía facial"></div>
+    </div>
+  </section>
 
-<!-- ============ EXPERTA ============ -->
-<section>
-  <div class="wrap">
-    <div class="expert">
-      <div class="photo"><img src="https://esp.metodohakari.com/img/juliana.webp" alt="Juliana Azevedo — esteticista especializada en Japón" style="width:100%;height:100%;object-fit:cover"></div>
-      <div>
-        <p class="eyebrow">La experta</p>
-        <h2>Juliana Azevedo</h2>
-        <p>Soy <b class="gold">Juliana Azevedo</b>, esteticista profesional con más de 10 años de experiencia en el mundo de la belleza y los masajes faciales.</p>
-        <p>Me especialicé en <b class="gold">Japón</b>, donde aprendí las técnicas más modernas de yoga facial y rejuvenecimiento natural directamente en su origen. Reuní las mejores maniobras en un método simple para que cualquier mujer pueda aplicarlo en casa.</p>
-        <p>Los resultados, cuando la técnica se hace bien y a diario, son realmente impresionantes.</p>
+  
+
+  <section class="section includes">
+    <div class="eyebrow">Lo que cambia en tu trabajo</div><div class="h2">La diferencia que el método hace en <span class="hl">tu cabina</span></div>
+    <div class="cmp">
+      <div class="r hd"><div class="c">Sin el método</div><div class="c">Con el Método Hakari</div></div>
+      <div class="r"><div class="c">Servicio que depende de aparatos y producto</div><div class="c">Servicio con <b>coste operativo cero</b> — solo tus manos</div></div>
+      <div class="r"><div class="c">La clienta desaparece después del pack</div><div class="c">Protocolo <b>naturalmente recurrente</b>: el resultado exige continuidad</div></div>
+      <div class="r"><div class="c">Compites por precio con la cabina de al lado</div><div class="c">Ofreces lo que <b>casi nadie ofrece</b> en tu ciudad</div></div>
+      <div class="r"><div class="c">Público limitado por contraindicaciones</div><div class="c">Atiendes a <b>embarazadas, piel sensible, oncológicas y postoperatorio</b></div></div>
+      <div class="r"><div class="c">Un servicio aislado en la carta</div><div class="c">Complemento perfecto para limpieza, drenaje y <b>post-armonización</b></div></div>
+      <div class="r"><div class="c">Inversión alta para lanzar un servicio nuevo</div><div class="c">Empiezas a aplicarlo <b>esta misma semana</b>, sin comprar nada</div></div>
+    </div>
+    <div class="roi">Dos sesiones del Método Hakari por semana en tu agenda ya pagan este curso <b>más de 10 veces</b> el primer mes.</div>
+  </section>
+
+  <section class="section includes" style="border-top:none">
+    <div class="about">
+      <div class="photo"><img loading="lazy" decoding="async" src="img/juliana.webp" alt="Juliana Azevedo"></div>
+      <div class="bio"><div class="k">Sobre la creadora</div><h3>Juliana Azevedo</h3>
+        <p>Apasionada por la belleza natural, Juliana viajó a <b>Japón</b> para aprender de cerca las técnicas ancestrales de masaje y yoga facial que las japonesas usan para mantener un rostro firme y luminoso durante toda la vida.</p><p>De ese estudio nació el <b>Método Hakari</b>: un protocolo profesional de rejuvenecimiento facial natural que reafirma, levanta y desinflama el rostro usando solo las manos — sin agujas, sin bótox y sin aparatología.</p><p>Hoy ya ha formado a <b>+3.500 profesionales de la estética en más de 40 países</b>, ayudándolas a elevar sus servicios, fidelizar clientas y hacer crecer su negocio.</p>
+        <div class="sign">— Juliana Azevedo</div></div>
+    </div>
+  </section>
+
+  <section class="section includes" style="border-top:none">
+    <div class="eyebrow">Materiales incluidos</div><div class="h2">Todo lo que <span class="hl">recibes hoy</span></div>
+    <ul><li><b>30+ video clases demostrativas</b> paso a paso</li><li><b>Protocolos profesionales</b> listos para aplicar en tu cabina</li><li><b>Guía de aplicación</b> y material descargable</li><li><b>Bono Cuello &amp; Escote Premium</b></li><li><b>Certificado de finalización</b> del curso</li><li>Acceso <b>de por vida</b>, a tu ritmo y en cualquier dispositivo</li></ul>
+  </section>
+
+  <section class="section">
+    <div class="bonus">
+      <img loading="lazy" decoding="async" class="seal" src="img/sello-bonos.png">
+      <div class="tag">Bonos exclusivos</div><h3>Además, te llevas GRATIS estos bonos</h3>
+      <div class="bonus-grid">
+        <div class="pic"><img loading="lazy" decoding="async" src="img/bonos.png"></div>
+        <div class="info"><ul class="bonus-list">
+          <li><b>Manual de Anatomía Facial</b> ilustrado — el nombre y la función de cada músculo.</li><li><b>Ebook “Masaje Facial &amp; Yoga Facial”</b> — el bótox natural hecho con las manos.</li><li><b>3 Protocolos de Bótox Natural</b> paso a paso.</li><li><b>Certificado de finalización</b> del Método Hakari.</li>
+        </ul></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ TESTIMONIOS ============ -->
-<section class="alt2">
-  <div class="wrap center">
-    <p class="eyebrow">Lo que dicen</p>
-    <h2>Mensajes reales de nuestras alumnas</h2>
-    <div class="divider"><span></span><i></i><span></span></div>
-    <div class="dep-grid">
-      <img src="/img/dep-elena.png" alt="Depoimento Elena Romero" loading="lazy">
-      <img src="/img/dep-marta.png" alt="Depoimento Marta Gonzalez" loading="lazy">
-      <img src="/img/dep-sofia.png" alt="Depoimento Sofia Herrera" loading="lazy">
-      <img src="/img/dep-lucia.png" alt="Depoimento Lucia Navarro" loading="lazy">
+  <section class="section price">
+    <div class="eyebrow">La oferta completa</div><div class="h2">Esto es <span class="hl">todo lo que recibes</span></div>
+    <div class="vstack"><div class="vrow"><span class="it">Curso Método Hakari (30+ clases)</span><span class="vl">297€</span></div><div class="vrow"><span class="it">Manual de Anatomía Facial ilustrado</span><span class="vl">47€</span></div><div class="vrow"><span class="it">Ebook Masaje Facial &amp; Yoga Facial</span><span class="vl">37€</span></div><div class="vrow"><span class="it">3 Protocolos de Bótox Natural</span><span class="vl">57€</span></div><div class="vrow"><span class="it">Bono Cuello &amp; Escote Premium</span><span class="vl">39€</span></div><div class="vrow vtot"><span class="it">Valor total</span><span class="vl">477€</span></div></div>
+    <div class="today">Hoy · pago único</div>
+    <div class="now">27<span class="cur">€</span></div>
+    <div class="pu">Pago único · sin mensualidades</div>
+    <div class="pbadge">★ Oferta por tiempo limitado</div>
+    <div class="divider"></div>
+    <a class="cta" id="cta-price" data-checkout href="https://pay.hotmart.com/M106209244D?off=jlhrnwtg&amp;checkoutMode=10"><span class="big">Quiero acceder al Método Hakari</span><span class="small">PAGO ÚNICO · ACCESO INMEDIATO</span></a>
+    <div class="micro">Pago único · Acceso inmediato · Garantía de 7 días</div>
+  </section>
+
+  <section class="section">
+    <div class="guar"><div class="gseal"><span class="d">7</span><span class="t">DÍAS</span></div>
+      <div><h3>Garantía blindada de 7 días</h3><p>Míralo, aplícalo en una clienta. Si en 7 días sientes que no le suma nada a tu cabina, te devolvemos el 100% de tu dinero. <span class="em">Sin preguntas, sin complicaciones.</span></p></div></div>
+  </section>
+
+  <section class="section">
+    <div class="eyebrow">Lo que dicen las profesionales</div><div class="h2">Una técnica que <span class="hl">eleva tu cabina</span></div>
+    <div class="vtesti">
+      <div class="vlabel">Testimonio de una alumna</div>
+      <div class="vframe"><video controls playsinline preload="metadata" poster="img/poster-testimonio.webp"><source src="videos/hakari-testimonio-es.mp4" type="video/mp4"></video></div>
+      <p class="vcap">Una técnica que cambia <b>dos cosas a la vez</b>: la autoestima de tu clienta, que por fin se reconoce en el espejo — y el resultado económico de tu cabina. Un tratamiento de valor, sin ningún aparato y sin producto, que tus clientas <b>reservan una y otra vez</b>.</p>
     </div>
-    
-  </div>
-</section>
-
-<!-- ============ CERTIFICADO ============ -->
-<section>
-  <div class="wrap center">
-    <p class="eyebrow">Reconocimiento</p>
-    <h2>Al finalizar, recibes tu certificado</h2>
-    <div class="divider"><span></span><i></i><span></span></div>
-    <div class="hk-cert">
-      <div class="fr"></div>
-      <div class="ci">
-        <svg class="kl" viewBox="0 0 900 520" aria-label="Hakari">
-          <defs><linearGradient id="cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#C9A24B"/><stop offset="45%" stop-color="#C0902F"/><stop offset="100%" stop-color="#B07C5B"/></linearGradient><linearGradient id="ce" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A85F78"/><stop offset="100%" stop-color="#C9A24B"/></linearGradient></defs>
-          <g transform="translate(450,150)"><path d="M 62,-8 A 70,70 0 1 0 70,40" fill="none" stroke="url(#ce)" stroke-width="11" stroke-linecap="round" transform="rotate(20)"/><g fill="url(#cg)"><path d="M0,-3 C 9,-9 9,-26 0,-34 C -9,-26 -9,-9 0,-3 Z"/><path d="M0,-3 C 9,-9 9,-26 0,-34 C -9,-26 -9,-9 0,-3 Z" transform="rotate(72)"/><path d="M0,-3 C 9,-9 9,-26 0,-34 C -9,-26 -9,-9 0,-3 Z" transform="rotate(144)"/><path d="M0,-3 C 9,-9 9,-26 0,-34 C -9,-26 -9,-9 0,-3 Z" transform="rotate(216)"/><path d="M0,-3 C 9,-9 9,-26 0,-34 C -9,-26 -9,-9 0,-3 Z" transform="rotate(288)"/><circle r="4.5" fill="#F3E3B8"/></g></g>
-          <text x="450" y="300" text-anchor="middle" font-family="Jost,sans-serif" font-size="34" letter-spacing="18" fill="#3A2A30">MÉTODO</text>
-          <text x="450" y="392" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="118" letter-spacing="6" font-weight="700" fill="url(#cg)">HAKARI</text>
-        </svg>
-        <div class="ct">Certificado</div>
-        <div class="cs">de finalización</div>
-        <div class="cp">Se otorga el presente certificado a</div>
-        <div class="cn">Tu Nombre</div>
-        <div class="cd">por haber completado con éxito el <b style="color:var(--gold)">Método Hakari</b> — formación en Yoga Facial y Bótox Natural Japonés.</div>
-        <div class="cf"><div><div class="l">Juliana Azevedo</div><small>Instructora · Esteticista</small></div><div><div class="l">2026</div><small>Fecha de emisión</small></div></div>
-      </div>
+    <div class="testi">
+      <div class="tcard"><div class="stars">★★★★★</div><p class="q">“Sumé el Método Hakari a mi carta y mis clientas notan resultados desde la primera sesión. Subí el precio de mis sesiones.”</p><div class="who">Carolina M.</div><div class="loc">Esteticista · Madrid</div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p class="q">“Es una formación clara y fácil de aplicar. Ahora ofrezco un servicio natural premium y mis clientas vuelven y me recomiendan.”</p><div class="who">Marisol R.</div><div class="loc">Cosmetóloga · Barcelona</div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p class="q">“Incorporé el protocolo a mi cabina y aumenté el ticket de mis sesiones. La mejor inversión para mi negocio este año.”</p><div class="who">Patricia G.</div><div class="loc">Facialista · Valencia</div></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ PARA QUIÉN ============ -->
-<section>
-  <div class="narrow center">
-    <p class="eyebrow">¿Es para ti?</p>
-    <h2>El Método Hakari es para ti si…</h2>
-    <div class="divider"><span></span><i></i><span></span></div>
-    <ul class="check" style="text-align:left">
-      <li>Quieres rejuvenecer <b>sin agujas</b> ni procedimientos invasivos</li>
-      <li>Te cansaste de gastar en <b>cremas que no funcionan</b></li>
-      <li>Tienes <b>papada, flacidez, hinchazón</b> o líneas de expresión</li>
-      <li>Tienes apenas <b>20 minutos al día</b> para tu autocuidado</li>
-      <li>Quieres resultados <b>naturales y duraderos</b></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ============ OFERTA ============ -->
-<section id="oferta" class="alt">
-  <div class="wrap center">
-    <p class="eyebrow">Oferta exclusiva</p>
-    <h2>Tu rostro merece cuidado, no corrección.</h2>
-    <div class="divider"><span></span><i></i><span></span></div>
-    <div class="offer">
-      <ul class="stack">
-        <li><b>Curso completo Método Hakari (30+ clases)</b><span>197 €</span></li>
-        <li><b>Protocolo 1 — Lifting Express</b><span>37 €</span></li>
-        <li><b>Protocolo 2 — Contorno y Papada</b><span>37 €</span></li>
-        <li><b>Protocolo 3 — Glow Japonés</b><span>27 €</span></li>
-        <li><b>Bono Cuello &amp; Escote Premium</b><span>47 €</span></li>
-        <li><b>Acceso de por vida + actualizaciones</b><span>97 €</span></li>
-        <li class="tot"><b class="tot">Valor total</b><span>442 €</span></li>
-      </ul>
-      <div class="price">
-        <div class="old">Hoy NO pagas 442 €</div>
-        <div class="now"><span class="cur"></span>37 €</div>
-        <div class="note">EUR · pago único · acceso inmediato</div>
-      </div>
-      <div style="margin-top:26px"><a href="https://pay.hotmart.com/M106209244D?off=jlhrnwtg&checkoutMode=10" id="checkout-btn-1" class="cta checkout-link" data-checkout>Sí, quiero mi Método Hakari →</a></div>
-      <div class="trust"><span>🔒 Pago 100% seguro</span><span>♾️ Acceso de por vida</span><span>📱 Cualquier dispositivo</span></div>
+  <section class="section includes">
+    <div class="eyebrow">Preguntas frecuentes</div><div class="h2">Resolvemos tus <span class="hl">dudas</span></div>
+    <div class="faq">
+      <details open><summary>¿Necesito ser esteticista certificada?</summary><p>Es ideal para profesionales de la estética, la belleza y la salud, pero también puedes empezar desde cero: cada técnica se explica paso a paso en vídeo. Si ya tienes cabina, lo aplicas de inmediato.</p></details>
+      <details><summary>¿Puedo aplicarlo en mis clientas y cobrar por el servicio?</summary><p>Sí. Recibes <b>protocolos profesionales</b> listos para incorporar a tu cabina como un nuevo servicio natural premium, por el que puedes cobrar más.</p></details>
+      <details><summary>¿El Método Hakari funciona de verdad o es solo masaje?</summary><p>Son cosas distintas. El masaje trabaja tejido y drenaje; el Método Hakari es <b>reeducación muscular</b> — activa músculos atrofiados y libera los que están en tensión crónica. Por eso el resultado se sostiene con la continuidad.</p></details>
+      <details><summary>¿En cuánto tiempo aprendo el método?</summary><p>Avanzas a tu ritmo. La mayoría completa la formación en pocos días y empieza a aplicar las técnicas con sus clientas esa misma semana.</p></details>
+      <details><summary>¿Recibo certificado?</summary><p>Sí. Al completar la formación obtienes un <b>certificado de finalización</b> del Método Hakari.</p></details>
+      <details><summary>¿Tiene contraindicaciones?</summary><p>Es un método 100% natural, hecho solo con las manos. Por eso atiende a públicos que no pueden hacerse un procedimiento invasivo — el curso muestra los cuidados y ajustes para cada caso.</p></details>
+      <details><summary>¿El pago es único?</summary><p>Sí, es un <b>pago único de 27€</b>, sin mensualidades ni cargos ocultos, con acceso de por vida a todas las clases, protocolos y bonos.</p></details>
+      <details><summary>¿Y si no es para mí?</summary><p>Tienes <b>7 días de garantía</b>. Si sientes que no es para ti, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.</p></details>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ GARANTÍA ============ -->
-<section>
-  <div class="wrap">
-    <div class="guarantee">
-      <div class="seal"><b>7</b><span>Días</span></div>
-      <div>
-        <h3 class="gold">Garantía blindada de 7 días</h3>
-        <p style="margin:10px 0 0">Entra, accede a todo el contenido y aplícalo. Si en 7 días sientes que no es para ti, nos escribes un mensaje y te devolvemos el <b class="gold">100% de tu dinero</b>. Sin preguntas, sin complicaciones. El riesgo es todo nuestro.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  <section class="hero" style="padding-top:34px">
+    <div class="h2">Empieza hoy y <span class="hl">haz crecer tu negocio</span></div>
+    <a class="cta" id="cta-final" data-checkout href="https://pay.hotmart.com/M106209244D?off=jlhrnwtg&amp;checkoutMode=10"><span class="big">Quiero acceder al Método Hakari</span><span class="small">PAGO ÚNICO · ACCESO INMEDIATO</span></a>
+    <div class="micro">Pago único de 27€ · Acceso inmediato · Garantía de 7 días</div>
+  </section>
 
-<!-- ============ FAQ ============ -->
-<section class="alt">
-  <div class="narrow">
-    <p class="eyebrow center">Preguntas frecuentes</p>
-    <h2 class="center">Dudas comunes</h2>
-    <div class="divider"><span></span><i></i><span></span></div>
-    <details><summary>¿Funciona en rostros más llenos o con papada?</summary><p>Sí. El método tonifica los músculos y reduce la hinchazón — ideal para cualquier tipo de rostro.</p></details>
-    <details><summary>¿Necesito experiencia previa?</summary><p>Ninguna. Todo es paso a paso, pensado para principiantes.</p></details>
-    <details><summary>¿Cuánto tiempo al día debo dedicar?</summary><p>20 minutos. Los efectos aparecen incluso practicando 3 a 4 veces por semana.</p></details>
-    <details><summary>¿Cuándo veré resultados?</summary><p>La mayoría nota cambios en las primeras 2 semanas con uso continuo.</p></details>
-    <details><summary>¿Cómo accedo al curso?</summary><p>Es 100% online. Recibes el acceso por email inmediatamente tras la compra.</p></details>
-    <details><summary>¿Tiene certificado?</summary><p>Sí, al finalizar las clases recibes tu certificado.</p></details>
-    <details><summary>¿Por cuánto tiempo tengo acceso?</summary><p>De por vida, incluidas todas las actualizaciones futuras.</p></details>
-  </div>
-</section>
-
-<!-- ============ CTA FINAL ============ -->
-<section class="final">
-  <div class="narrow center">
-    <h2>Hoy puedes empezar a recuperar tu rostro — <span class="gold">naturalmente.</span></h2>
-    <p class="lead" style="margin:18px auto 34px;max-width:600px">El Método Hakari, los 3 protocolos de bótox natural y el bono Cuello &amp; Escote están disponibles solo en esta página y por tiempo limitado.</p>
-    <a href="https://pay.hotmart.com/M106209244D?off=jlhrnwtg&checkoutMode=10" id="checkout-btn-2" class="cta checkout-link" data-checkout>Quiero rejuvenecer mi rostro ahora →</a>
-    <p class="cta-sub">Bonos válidos solo mientras esta página esté abierta.</p>
-    <p class="kanji">光 · 自然美</p>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <p>© Método Hakari — Juliana Azevedo. Todos los derechos reservados.</p>
-    <p style="margin-top:8px;font-size:11px">Este producto no sustituye tratamientos médicos. Resultados pueden variar de persona a persona.</p>
-  </div>
-</footer>
-
+  <footer class="foot">
+    <div class="row"><span>🔒 Pago seguro</span><span>∞ Acceso de por vida</span><span>🎓 +3.500 profesionales formadas</span></div>
+    Eleva tu experiencia, transforma resultados y haz crecer tu negocio. · © Método Hakari — Juliana Azevedo
+  </footer>
+</div>
+<div class="sticky"><span class="sp"><s>477€</s> Hoy 27€</span><a data-checkout href="https://pay.hotmart.com/M106209244D?off=jlhrnwtg&amp;checkoutMode=10">Quiero acceder →</a></div>
 <script>
-  // Enlace de checkout Hotmart — reemplazar HOTMART_URL por el link real
-  var HOTMART_URL = "https://pay.hotmart.com/M106209244D?off=jlhrnwtg&checkoutMode=10"; // Hotmart checkout — España (espana)
+  // ============================================================================
+  // CHECKOUT — ponto unico de verdade.
+  // TODO Doug: trocar pela URL da oferta NUEVA de 27 EUR quando ela existir.
+  //   O anexo veio com off=2816ldbj (oferta COLOMBIA / COP) — nao serve para EUR.
+  //   Enquanto isso fica a oferta Espanha que ja estava no ar (off=jlhrnwtg).
+  // ============================================================================
+  var HOTMART_URL = "https://pay.hotmart.com/M106209244D?off=jlhrnwtg&checkoutMode=10";
   var HK_OFF = (HOTMART_URL.match(/[?&]off=([^&]+)/) || [])[1] || "";
-  // Solo garantiza el código de oferta (off) en el href; la navegación es el
-  // click nativo del <a> para que GTM lo detecte nativamente como gtm.linkClick.
+  // O server-GTM (api.metodohakari.com) remove o off= do href no load.
+  // O guard reinjeta. Nao usar window.location: quebra o gtm.linkClick nativo.
   function hkEnsureOff(){
     if(!HK_OFF) return;
     document.querySelectorAll('[data-checkout]').forEach(function(a){
@@ -613,7 +428,4 @@
   setTimeout(hkEnsureOff, 1200);
   setTimeout(hkEnsureOff, 3500);
 </script>
-<div class="hk-notif" id="hkNotif"><div class="ph">🌸</div><div class="bd"><strong id="hkNotifName"></strong><span>acaba de adquirir el Método Hakari</span><div class="tm">hace pocos minutos · ✔ verificado</div></div></div>
-<script>(function(){var d=[["María","Madrid"],["Lucía","Barcelona"],["Carmen","Valencia"],["Marta","Sevilla"]];var e=document.getElementById('hkNotif'),n=document.getElementById('hkNotifName'),i=0;function s(){var x=d[i%d.length];n.textContent=x[0]+' en '+x[1];e.classList.add('show');setTimeout(h,6000);i++;}function h(){e.classList.remove('show');}setTimeout(function t(){s();setTimeout(t,14000);},5000);})();</script>
-</body>
-</html>
+</body></html>
